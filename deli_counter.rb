@@ -16,9 +16,9 @@ line (katz_deli) #=> "The line is currently: 1. Anila 2. Sharz 3. Sheni"
 
 def line (array)
   if array.length == 0
-  puts "there is nobody in line."
+  puts "The line is empty."
 else
-  message = "The line is currently: 1. Anila 2. Sharz 3. Sheni:"
+  message = "The line is currently:"
 
 array.each_with_index do
   |value, index|
@@ -28,15 +28,9 @@ array.each_with_index do
  end
 end
 
-def now_serving (array)
-  if array.empty == true
-    puts "You can go next!"
-  elsif array.empty == flase
-    puts "Now serving #{array.shift}."
-  end
-end
+def now_serving (array)=
 if array.empty? == true
-   puts "There is nobody waiting to be served!"
+   puts "Whos next!"
  elsif array.empty? == false
    puts "Currently serving #{array.shift}."
  end
