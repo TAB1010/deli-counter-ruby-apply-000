@@ -1,5 +1,9 @@
 katz_deli = []
 
+take_a_number(katz_deli, "Anila") #=> Welcome, Anila. You are number 1 in line.
+take_a_number(katz_deli, "Sharz") #=> Welcome, Sharz. You are number 2 in line.
+take_a_number(katz_deli, "Sheni") #=> Welcome, Sheni. You are number 3 in line.
+
 def take_a_number(array, name)
   array.push (name)
   position = array.index (name)
@@ -7,9 +11,8 @@ def take_a_number(array, name)
   return name, position
 end
 
-take_a_number(katz_deli, "Anila") #=> Welcome, Anila. You are number 1 in line.
-take_a_number(katz_deli, "Sharz") #=> Welcome, Sharz. You are number 2 in line.
-take_a_number(katz_deli, "Sheni") #=> Welcome, Sheni. You are number 3 in line.
+line (katz_deli) #=> "The line is currently: 1. Anila 2. Sharz 3. Sheni"
+
 
 def line (array)
   if array.length == 0
@@ -25,10 +28,6 @@ array.each_with_index do
  end
 end
 
-line (katz_deli) #=> "The line is currently: 1. Anila 2. Sharz 3. Sheni"
-
-
-
 def now_serving (array)
   if array.empty == true
     puts "You can go next!"
@@ -36,4 +35,10 @@ def now_serving (array)
     puts "Now serving #{array.shift}."
   end
 end
-now_serving(katz_deli) #=> "Currently serving Sharz."
+if array.empty? == true 
+   puts "Whos next!"
+ elsif array.empty? == false 
+   puts "Currently serving #{array.shift}."
+ end 
+end 
+
