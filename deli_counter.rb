@@ -35,10 +35,9 @@ def now_serving (array)
     puts "Now serving #{array.shift}."
   end
 end
-if array.empty? == true 
+if array.empty? == true
    puts "Whos next!"
- elsif array.empty? == false 
+ elsif array.empty? == false
    puts "Currently serving #{array.shift}."
- end 
-end 
-
+ end
+end
