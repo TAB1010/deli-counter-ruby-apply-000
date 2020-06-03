@@ -7,9 +7,9 @@ def take_a_number(array, name)
   return name, position
 end
 
-take_a_number(katz_deli, "Anila") #=> Welcome, Anila. You are number 1 in line.
-take_a_number(katz_deli, "Sharz") #=> Welcome, Sharz. You are number 2 in line.
-take_a_number(katz_deli, "Sheni") #=> Welcome, Sheni. You are number 3 in line.
+take_a_number(katz_deli, "Ada") #=> Welcome, Anila. You are number 1 in line.
+take_a_number(katz_deli, "Grace") #=> Welcome, Sharz. You are number 2 in line.
+take_a_number(katz_deli, "Kent") #=> Welcome, Sheni. You are number 3 in line.
 
 
 def now_serving(array)
