@@ -16,9 +16,9 @@ line (katz_deli) #=> "The line is currently: 1. Anila 2. Sharz 3. Sheni"
 
 def line (array)
   if array.length == 0
-  puts "The line is empty."
+  puts "there is nobody in line."
 else
-  message = "The line is currently:"
+  message = "should say the line is empty:"
 
 array.each_with_index do
   |value, index|
